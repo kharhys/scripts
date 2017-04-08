@@ -407,7 +407,7 @@ function run_installer()
 			depFound=$((depFound+1))
 			check "multirust"
 			isMultirust=true
-			if [[ $(multirust show-default 2>/dev/null | grep beta | wc -l) == 3 ]]; then
+			if [[ $(multirust show-default 2>/dev/null | grep beta | wc -l) == 4 ]]; then
 				depFound=$((depFound+1))
 				check "rust beta"
 				isMultirustBeta=true
